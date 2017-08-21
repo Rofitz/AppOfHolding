@@ -4,6 +4,8 @@ namespace AppOfHolding
 {
     public class Item : IModel
     {
-        public string Name { get; set; }
+        public virtual string Name { get; set; }
+
+        public ItemTypeEnum Type { get; set; }
     }
 }

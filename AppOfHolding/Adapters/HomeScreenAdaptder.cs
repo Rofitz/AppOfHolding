@@ -34,7 +34,7 @@ namespace AppOfHolding
             if (view == null) // no view to re-use, create new
                 view = context.LayoutInflater.Inflate(Resource.Layout.ListItem, null);
             view.FindViewById<TextView>(Resource.Id.Text1).Text = item.Name;
-            view.FindViewById<TextView>(Resource.Id.Text2).Text = item.Name;
+            view.FindViewById<TextView>(Resource.Id.Text2).Text = item.Type.ToString();
             view.FindViewById<ImageView>(Resource.Id.Image).SetImageResource(Resource.Drawable.Icon);
             return view;
         }

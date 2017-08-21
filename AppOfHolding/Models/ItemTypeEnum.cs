@@ -7,6 +7,9 @@
         CURRENCY,
         DOCUMENT,
         SCROLLS,
-        POTIONS
+        POTIONS,
+        ARTEFACT,
+        MAGICMISC,
+        MISC,
     }
 }

@@ -1,6 +1,6 @@
-﻿namespace AppOfHolding.Models
+﻿namespace AppOfHolding.core.Models
 {
-    public class Currency : Item
+    public class Gold : Item
     {
         public int Copper { get; set; }
 

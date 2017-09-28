@@ -1,4 +1,4 @@
-﻿namespace AppOfHolding.Models
+﻿namespace AppOfHolding.core.Models
 {
     public interface IModel
     {

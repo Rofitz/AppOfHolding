@@ -1,6 +1,4 @@
-﻿using AppOfHolding.Models;
-
-namespace AppOfHolding
+﻿namespace AppOfHolding.core.Models
 {
     public class Item : IModel
     {

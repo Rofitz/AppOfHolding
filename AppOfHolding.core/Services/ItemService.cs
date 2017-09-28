@@ -1,11 +1,31 @@
-﻿using AppOfHolding.Models;
-using System.Collections.Generic;
-
-namespace AppOfHolding.Services.DatabaseServices
+﻿namespace AppOfHolding.core.Services
 {
-    public class ItemDbService : BaseDbService<Item>
+    using Models;
+    using System.Collections.Generic;
+
+    public class ItemDbService : IApiService<Item>
     {
-        public IEnumerable<Item> TempGet()
+        public void Delete(int id)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public Item Get(int id)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void Post(Item model)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public int Put(Item id)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public IEnumerable<Item> Get()
         {
             return new List<Item>
             {
@@ -24,7 +44,7 @@ namespace AppOfHolding.Services.DatabaseServices
                     Name = "Leather Boots of Haste",
                     Type = ItemTypeEnum.ARMOR
                 },
-                new Currency
+                new Gold
                 {
                     Name = "Money",
                     Type = ItemTypeEnum.CURRENCY,

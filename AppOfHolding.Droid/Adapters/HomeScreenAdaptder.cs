@@ -31,6 +31,7 @@ namespace AppOfHolding
         {
             var item = items[position];
             View view = convertView;
+
             if (view == null) // no view to re-use, create new
                 view = context.LayoutInflater.Inflate(Resource.Layout.ListItem, null);
             view.FindViewById<TextView>(Resource.Id.Text1).Text = item.Name;
